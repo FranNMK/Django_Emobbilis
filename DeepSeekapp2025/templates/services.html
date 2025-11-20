@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Services</h1>
+   <a href="{% url 'home' %}" target="_parent" rel="noopener noreferrer">Home</a>
+    <a href="{% url 'about' %}" target="_blank" rel="noopener noreferrer">About</a>
+    <a href="{% url 'contact' %}" target="_blank" rel="noopener noreferrer">Contact</a>
+    <a href="{% url 'services' %}" target="_blank" rel="noopener noreferrer">Services</a>
+
+    <a href="{% url 'products' %}" target="_blank" rel="noopener noreferrer">Products</a>
+
+    <p>Our services include:</p>
+    <ul>
+        <li>Web Development</li>
+        <li>Mobile App Development</li>
+        <li>Graphic Design</li>
+        <li>Video Production</li>
+    </ul>
+    <img src="{% static 'images/1.jpg' %}" alt="">
+</body>
+</html>

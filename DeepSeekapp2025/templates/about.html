@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>About Me</h1>
+    <a href="{% url 'home' %}" target="_parent" rel="noopener noreferrer">Home</a>
+    <a href="{% url 'about' %}" target="_blank" rel="noopener noreferrer">About</a>
+    <a href="{% url 'contact' %}" target="_blank" rel="noopener noreferrer">Contact</a>
+    <a href="{% url 'services' %}" target="_blank" rel="noopener noreferrer">Services</a>
+
+    <a href="{% url 'products' %}" target="_blank" rel="noopener noreferrer">Products</a>
+
+    <p>I am learning Django and it is very interesting.</p>
+    <p>I am a software developer with a passion for web development.</p>
+    <p>I am a software developer with a passion for web development.</p>
+    <p>I am a software developer with a passion for web development.</p>    
+    <p>I am a software developer with a passion for web development.</p>
+    <p>I am a software developer with a passion for web development.</p>
+    <p>I am a software developer with a passion for web development.</p>
+
+    <img src="{% static 'images/aboutme.jpeg' %}" alt="">
+</body>
+</html>
